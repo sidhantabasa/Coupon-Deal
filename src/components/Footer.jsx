@@ -22,17 +22,19 @@ const Footer = () => {
         </logo>
 
       </div>
-      <div className="hover:cursor-pointer">
-          <h1>KNOW MORE</h1>
-          <h1>FAQ</h1>
-          <h1>CONTACT US</h1>
-          <h1>SUPPORT</h1>
+      <div>
+          <h1  className="hover:cursor-pointer">KNOW MORE</h1>
+          <h1  className="hover:cursor-pointer">FAQ</h1>
+          <h1  className="hover:cursor-pointer">CONTACT US</h1>
+          <h1  className="hover:cursor-pointer">SUPPORT</h1>
         </div>
       <div>
        
 
         <div className="space-x-5 flex justify-center">
-          <button>fb</button><button>insta</button><button>twiter</button>
+          <button>fb</button>
+          <button>insta</button>
+          <button>twiter</button>
         </div>
 
         <div className=" items-center flex flex-col ">
@@ -45,7 +47,7 @@ const Footer = () => {
           />
              <button
                   type="button"
-                  className=" py-1 m-1 w-24  text-white bg-blue-500 rounded-md shadow-sm hover:bg-green-600  focus:ring-2 focus:ring-green-500 "
+                  className=" py-1 m-1 w-24  text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700  focus:ring-2 focus:ring-green-500 "
               >
                   Submit
               </button>

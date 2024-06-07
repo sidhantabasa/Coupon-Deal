@@ -15,13 +15,13 @@ const Header = () => {
                 <h1>DEAL</h1>
             </div>
       </logo>
-     <div className='justify-between gap-x-6 text-lg p-2 md:flex hidden'>
-      <h2>HOME</h2>
-      <h2>CATEGORIES</h2>
-      <h2>STORE</h2>
+     <menu className='justify-between gap-x-6 text-lg p-2 md:flex hidden'>
+      <h2><i class="fas fa-home"></i> HOME</h2>
+      <h2><i class="fas fa-ticket-simple"></i>COUPONS</h2>
+      <h2><i class="fas fa-store"></i> STORE</h2>
       <h2>BUY/SELL</h2>
       <h2>ABOUT</h2>
-     </div>
+     </menu>
     <div className='md:flex hidden gap-x-2 font-semibold p-4'>
       <button>Sign In/Up</button>
     </div>
