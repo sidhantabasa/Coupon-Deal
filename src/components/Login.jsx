@@ -1,24 +1,49 @@
 import React from "react";
+import { useFormik } from "formik";
+import { loginSchema } from "../schemas/loginSchema";
+
+const initialValues = {
+  email: "",
+  password: "",
+};
 
 const Login = () => {
-return (
+  const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
+    useFormik({
+      initialValues: initialValues,
+      validationSchema: loginSchema,
+      onSubmit: (values, action) => {
+        console.log(values);
+        action.resetForm();
+      },
+    });
+  return (
     <div>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <form className="bg-gradient-to-r from-green-500 to-cyan-500 h- max-w-96 p-6 rounded-lg shadow-2xl">
-          <h1 className="flex font-bold text-white  text-2xl drop-shadow-lg justify-center p-4">LOGIN</h1>
+        <form
+          onSubmit={handleSubmit}
+          className="bg-gradient-to-r from-green-500 to-cyan-500 h- max-w-96 p-6 rounded-lg shadow-2xl"
+        >
+          <h1 className="flex font-bold text-white  text-2xl drop-shadow-lg justify-center p-4">
+            LOGIN
+          </h1>
           <div className=" mb-4">
-            <label
-              htmlFor="email"
-              className=" text-white font-semibold mb-2"
-            >
+            <label htmlFor="email" className=" text-white font-semibold mb-2">
               Email
             </label>
             <input
               id="email"
               type="email"
-              placeholder="Enter Email"
+              name="email"
+              placeholder="Enter Registered Email"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
+            {errors.email && touched.email ? (
+              <p className="text-white">{errors.email}</p>
+            ) : null}
           </div>
           <div className="mb-4">
             <label
@@ -30,9 +55,16 @@ return (
             <input
               id="password"
               type="password"
+              name="password"
               placeholder="Enter Password"
+              value={values.password}
+              onChange={handleChange}
+              onBlur={handleBlur}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
+            {errors.password && touched.password ? (
+              <p className="text-white">{errors.password}</p>
+            ) : null}
           </div>
           <button className="w-full h-10 text-center  text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700   ">
             Login
@@ -50,7 +82,9 @@ return (
           </div>
           <hr className="mt-3 mx-10"></hr>
           <div>
-            <h1 className="text-white p-2 mt-4">New in CouponDeal? <b>Register Now</b></h1>
+            <h1 className="text-white p-2 mt-4">
+              New in CouponDeal? <b>Register Now</b>
+            </h1>
           </div>
         </form>
       </div>
