@@ -22,11 +22,13 @@ const Signup = () => {
   // console.log(errors);
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <form
-          onSubmit={handleSubmit}
-          className="bg-gradient-to-r from-green-500 to-cyan-500 h-[580px] w-96 p-6 rounded-lg shadow-2xl"
-        >
+      <div className="bg-blue-300/60 flex items-center justify-center min-h-screen ">
+      <form
+  onSubmit={handleSubmit}
+  className="bg-gradient-to-tl from-purple-400/60 to-cyan-500/60 h-full max-w-96 p-6 rounded-lg shadow-inner-outer"
+>
+  
+
           <h1 className="flex font-bold text-white  text-2xl drop-shadow-lg justify-center p-4">
             SIGN UP
           </h1>
@@ -115,7 +117,7 @@ const Signup = () => {
           <button className="w-full h-10 text-center  text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700   ">
             Sign Up
           </button>
-          <hr className="mt-3 mx-10"></hr>
+          {/* <hr className="mt-3 mx-10"></hr>
           <div className="flex justify-around bg-slate-300/30 hover:bg-slate-800/40 hover:text-white border rounded-xl m-4">
             <button className="flex">
               <img
@@ -125,10 +127,10 @@ const Signup = () => {
               />
               Continue with Google
             </button>
-          </div>
-          <hr className="mt-3 mx-10"></hr>
+          </div> */}
+          <hr className="mt-5 mx-10"></hr>
           <div>
-            <h1 className="flex justify-center text-white p-2 mt-4">
+            <h1 className="flex justify-center tracking-wider text-black p-2 mt-4">
               Already User? <b>Login Now</b>
             </h1>
           </div>
