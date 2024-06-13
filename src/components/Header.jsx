@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./images/cd_logo.png";
+import { BsCart3} from 'react-icons/bs';
+import Dropbox from "./Dropbox";
 
-// import Dropdown from "./Dropdown";
 const Header = () => {
   return (
     <div className="bg-gradient-to-tl from-purple-400/60  to-cyan-500/60  pt-3 pb-1 ">
@@ -14,34 +15,22 @@ const Header = () => {
           </div>
         </logo>
         <menu className=" md:flex justify-between gap-x-6 text-md p-2 hidden">
-          <h2>
-            <i class="fas fa-home"></i> HOME
-          </h2>
-          <h2>
-          <i class="fas fa-receipt"></i> COUPONS
-          </h2>
-          <h2>
-            <i class="fas fa-store"></i> STORE
-          </h2>
-          <h2>
-          <i class="fas fa-upload"></i> SELL COUPON
-          </h2>
-          <h2>
-            <i class="fas fa-eye"></i> ABOUT
-            
-          </h2>
+          <h2>HOME</h2>
+          <h2>COUPONS</h2>
+          <h2>STORE</h2>
+          <h2>SELL COUPON</h2>
+          <h2>ABOUT</h2>
         </menu>
         <div className="md:flex hidden gap-x-2 font-semibold p-4">
           <button className="m-2">
-            <i class="fas fa-heart"></i>
+            <BsCart3 className='h-6 w-6' />
           </button>
           <button className="m-2">
             <i class="fas fa-user"></i>
           </button>
-          {/* <div className=" m-2 md:block">
-            <button><i class="fas fa-bars"></i></button>
-          <Dropdown/>
-          </div> */}
+        </div>
+        <div className="mr-4 md:hidden ">
+         <Dropbox/>
         </div>
       </nav>
     </div>

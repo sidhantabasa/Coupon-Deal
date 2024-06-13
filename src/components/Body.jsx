@@ -20,18 +20,18 @@ const Body = () => {
         </div>
 
         <div className="bg-[#181e24] ">
-          <h1 className="text-center font-extrabold text-3xl p-1 bg-slate-300 shadow-xl text-blue-900">
-            Soldout Coupons{" "}
+          <h1 className="text-center font-extrabold text-3xl p-1 bg-[#181e24] shadow-xl text-white">
+            SOLDOUT COUPONS{" "}
           </h1>
           <div className="bg-slate-300 h-72 mt-2"></div>
 
-          <h1 className="text-center font-extrabold text-3xl mt-2 p-1 bg-slate-300 shadow-xl  text-blue-900">
-            About CouponDeal{" "}
+          <h1 className="text-center font-extrabold text-4xl mt-2 p-1 shadow-xl  text-white">
+            ABOUT COUPONDEAL{" "}
           </h1>
-
+{/* 
           <h2 className="text-center font-bold text-5xl mt-3 text-white ">
             INTRODUCTION
-          </h2>
+          </h2> */}
           <p className="px-40 pl-44 text-white  py-4 ">
             Welcome to CouponDeal , your ultimate destination for the best
             e-coupon and deals online ! Our platform is dedicated to helping to
@@ -41,7 +41,7 @@ const Body = () => {
             , explore , save and enjoy !
           </p>
 
-          <h2 className="text-center font-bold text-5xl mt-3 box-shadoq-lg  text-white">
+          <h2 className="text-center font-bold text-3xl mt-3 box-shadoq-lg  text-white">
             WHAT WE OFFER
           </h2>
 
@@ -115,7 +115,7 @@ const Body = () => {
             
           </div>
 
-          <h2 className="text-center font-bold text-xl mt-3 text-blue-700 ">
+          <h2 className="text-center font-bold text-4xl mt-3 text-white ">
             TEAM MEMBER
           </h2>
 
@@ -123,7 +123,7 @@ const Body = () => {
             <div className="px-24 py-4 ">
               <div className=" w-44">
                 <img src={sid} alt="sid" className=" h-56 w-44 rounded-full " />
-                <h3 className="text-center text-lg font-bold">SIDHANTA BASA</h3>
+                <h3 className="text-center text-lg text-white mt-3 font-bold">SIDHANTA BASA</h3>
                 <p className="text-center">CEO</p>
                 <button className="px-5">fb</button>
                 <button className="px-5">insta</button>
@@ -158,8 +158,8 @@ const Body = () => {
 
           <div className=" relative mx-40 space-y-3 ">
           <div className="flex">
-            <div className="absolute h w-[1090px] inset-0 z-40  bg-gradient-to-r from-[#181e24] via-transparent to-[#181e24]  "></div>
-            <div className="absolute ml-[1090px] w-[20px] inset-0 z-40 bg-[#181e24]  "></div>
+            <div className="absolute h inset-0 z-40  bg-gradient-to-r from-[#181e24] via-transparent to-[#181e24]  "></div>
+            {/* <div className="absolute ml-[1090px] w-[20px] inset-0 z-40 bg-[#181e24]  "></div> */}
           </div>
 
             <Marquee  direction="right " className="p-3" >

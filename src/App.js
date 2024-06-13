@@ -9,6 +9,7 @@ import Card from './components/Card';
 import Sellpage from './components/Sellpage';
 
 
+
 function App() {
   return(
       <>
@@ -20,6 +21,7 @@ function App() {
       <Signup/>
       <Error/>
       <Sellpage/>
+      
       </>      
       
   )

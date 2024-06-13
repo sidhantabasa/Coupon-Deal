@@ -22,7 +22,7 @@ const Signup = () => {
   // console.log(errors);
   return (
     <>
-      <div className="bg-blue-300/60 flex items-center justify-center min-h-screen ">
+      <div className="bg-[#181e24] flex items-center justify-center min-h-screen ">
       <form
   onSubmit={handleSubmit}
   className="bg-gradient-to-tl from-purple-400/60 to-cyan-500/60 h-full max-w-96 p-6 rounded-lg shadow-inner-outer"
