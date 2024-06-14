@@ -4,7 +4,7 @@ const Sellpage = () => {
   return (
     <div>
       <div className="bg-[#181e24] flex items-center justify-center min-h-screen ">
-        <form className="bg-gradient-to-tl from-purple-400/60 to-cyan-500/60 h-full max-w-96 p-6 rounded-lg shadow-inner-outer">
+        <form className="bg-gradient-to-tl from-cyan-500 to-green-500  h-full max-w-96 p-6 rounded-lg shadow-inner-outer">
           <h1 className="flex font-bold text-white  text-2xl drop-shadow-lg justify-center p-4">
             UPLOAD COUPON
           </h1>

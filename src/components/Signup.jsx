@@ -25,7 +25,7 @@ const Signup = () => {
       <div className="bg-[#181e24] flex items-center justify-center min-h-screen ">
       <form
   onSubmit={handleSubmit}
-  className="bg-gradient-to-tl from-purple-400/60 to-cyan-500/60 h-full max-w-96 p-6 rounded-lg shadow-inner-outer"
+  className="bg-gradient-to-tl from-cyan-500 to-green-500  h-full max-w-96 p-6 rounded-lg shadow-inner-outer"
 >
   
 

@@ -5,7 +5,7 @@ import Dropbox from "./Dropbox";
 
 const Header = () => {
   return (
-    <div className="bg-gradient-to-tl from-purple-400/60  to-cyan-500/60  pt-3 pb-1 ">
+    <div className="bg-gradient-to-tl from-cyan-500 to-green-500  pt-3 pb-1 ">
       <nav className="flex text-white border-1 mt-0 bg-black/30 rounded-full m-3 items-center justify-between">
         <logo className="flex  p-2 font-bold items-center justify-between">
           <img className="h-14 w-20" src={logo} alt="" />

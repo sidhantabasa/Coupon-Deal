@@ -1,31 +1,51 @@
-import React from 'react'
+import React from "react";
 import logo from "./images/cd_logo.png";
 
 const Card = () => {
   return (
-    <div>
-    <div className="bg-slate-300 rounded-xl m-3 absolute h-80 w-64 hover:bg-slate-400 hover:shadow-lg transition-all duration-300">
-        <img src={logo} className="h-36 w-[240px] rounded-lg relative m-2" alt="Logo" />
-        <div>
-          <p className="pl-6 font-bold">Offer 50% off</p>
-          <ul className="list-disc list-inside pl-2 pb-3">
-            <li>minimum</li>
-            <li>validity</li>
-          </ul>
-          <hr className="w-52 mx-5" />
-          <div className="flex flex-col items-center">
-            <h2 className="text-center pt-1">Price: 300</h2>
-            <button
-              type="button"
-              className="py-1 m-1 w-24 text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-600 hover:ease-in-out duration-200 focus:ring-2 focus:ring-green-500"
-            >
-              BUY NOW
-            </button>
+    <div className="bg-[#181e24] h-80 w-64 p-1 items-center">
+      <div className="bg-[#2a323c] p-2 pl-5 text-white   w-56 mx-4 rounded-t-lg ">
+        <div className="flex mt-5 ">
+          <img
+            src={logo}
+            alt="bg"
+            className="object-cover h-10 w-14  rounded-md"
+          />
+          <div>
+            <h1 className="font-bold">Offer {} off</h1>
+            <h1 className="text-sm">on{}</h1>
           </div>
         </div>
+        <hr className="mt-3 w-40 ml-3" />
+        <div className="mt-3 text-sm">
+          <h1 className="font-medium">Terms and conditions</h1>
+          <ol className=" mt-2 mr-3 text-xs">
+            <li>1. Offer Valid on offcial sites only</li>
+            <li>2. This offer cannot be clubbed with any other offer </li>
+            <li>3. Minimum spend {}</li>
+            <li>4. Validity {}</li>
+          </ol>
+        </div>
+      </div>
+
+      <div className="flex w-[248px]  bg-[#2a323c] rounded-full mx-1 ">
+        <div className="bg-[#181e24] h-8 w-8 rounded-full"></div>
+        <div className="text-white text-center w-48">
+          ----------------------
+        </div>
+        <div className="bg-[#181e24] h-8 w-8  rounded-full items-end "></div>
+      </div>
+
+      <div className="bg-[#2a323c] h-16 w-56 ml-4 rounded-b-lg py-2 px-12 ">
+        <button
+          type="button"
+          className="py-2 px-3 text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-green-500"
+        >
+          Reedem Now
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
