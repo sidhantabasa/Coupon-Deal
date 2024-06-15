@@ -5,7 +5,6 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Body from './components/Body';
 import Error from './components/Error';
-import Card from './components/Card';
 import Sellpage from './components/Sellpage';
 
 

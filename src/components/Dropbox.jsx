@@ -28,55 +28,55 @@ const Dropbox = () => {
           role="menu"
         >
           <div className="py-1 bg-[#2a323c] text-white rounded-b-md shadow-xl ">
-            <a
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
               Home
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm hover:bg-gray-800"
               role="menuitem"
             >
               About
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
               Coupons
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
               Store
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
               Sell Coupon
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
               Cart
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               className="block px-4 py-2 text-sm  hover:bg-gray-800"
               role="menuitem"
             >
              User
-            </a>
+            </button>
           </div>
         </div>
       )}

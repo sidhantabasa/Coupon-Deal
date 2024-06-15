@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import mBG from "./images/mobileBG.png";
 import sid from "./images/mobileBG.png";
 import Card from "./Card";
-import ScrollToTop from "./ScrollToTop";
+// import ScrollToTop from "./ScrollToTop";
 
 const Body = () => {
   return (

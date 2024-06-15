@@ -15,14 +15,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mb-4 md:mb-0 text-center md:text-left">
+      <div className="mb-4 md:mb-0 text-center ">
         <h1 className="hover:cursor-pointer mb-2 md:mb-0">KNOW MORE</h1>
         <h1 className="hover:cursor-pointer mb-2 md:mb-0">FAQ</h1>
         <h1 className="hover:cursor-pointer mb-2 md:mb-0">CONTACT US</h1>
         <h1 className="hover:cursor-pointer">SUPPORT</h1>
       </div>
       <div className="text-center md:text-left">
-        <div className="space-x-5 flex justify-center md:justify-start mb-4 md:mb-0">
+        <div className="space-x-5 flex justify-center md:justify-end mb-4 md:mb-0">
           <button>
             <i className="fab fa-facebook"></i>
           </button>
@@ -36,7 +36,7 @@ const Footer = () => {
             <i className="fab fa-linkedin"></i>
           </button>
         </div>
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center md:items-end">
           <h1>GIVE US SUGGESTION</h1>
           <input
             type="text"
@@ -46,7 +46,7 @@ const Footer = () => {
           />
           <button
             type="button"
-            className="py-1 w-24 text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-green-500"
+            className="py-1 w-24  text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-green-500"
           >
             Submit
           </button>

@@ -1,6 +1,9 @@
 import React from "react";
 import { useFormik } from "formik";
 import { loginSchema } from "../schemas/loginSchema";
+import { auth } from "../firebase";
+import { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth"; // Import the necessary Firebase auth functions
 
 const initialValues = {
   email: "",
@@ -8,14 +11,43 @@ const initialValues = {
 };
 
 const Login = () => {
+
+  const [errorMessage, setErrorMessage] = useState(""); // State for error message
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
       initialValues: initialValues,
       validationSchema: loginSchema,
       onSubmit: (values, action) => {
-        console.log(values);
+        signInWithEmailAndPassword(auth, values.email, values.password)
+          .then((userCredential) => {
+            // Logged in successfully
+            const user = userCredential.user;
+            console.log("Logged in successfully:", user);
+          })
+          .catch((error) => {
+            console.error("Login error:", error);
+            // Check error code and display appropriate error message
+            let errorMessage = "An error occurred. Please try again later."; // Default error message
+            switch (error.code) {
+              case "auth/invalid-email":
+                errorMessage = "Invalid email address.";
+                break;
+              case "auth/user-not-found":
+                errorMessage = "User not found. Please register.";
+                break;
+              case "auth/wrong-password":
+                errorMessage = "Incorrect password.";
+                break;
+              default:
+                errorMessage = "An error occurred. Please try again later.";
+            }
+            setErrorMessage(errorMessage);
+          });
+      
+        // Reset form fields
         action.resetForm();
       },
+      
     });
   return (
     <div>
@@ -28,7 +60,10 @@ const Login = () => {
             LOGIN
           </h1>
           <div className=" mb-4">
-            <label htmlFor="email" className=" text-white  shadow-lg font-semibold mb-2">
+            <label
+              htmlFor="email"
+              className=" text-white  shadow-lg font-semibold mb-2"
+            >
               Email
             </label>
             <input
@@ -66,6 +101,8 @@ const Login = () => {
               <p className="text-white">{errors.password}</p>
             ) : null}
           </div>
+          <p className="text-red-800">{errorMessage}</p>
+
           <button className="w-full h-10 text-center mt-4 text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700   ">
             Login
           </button>
