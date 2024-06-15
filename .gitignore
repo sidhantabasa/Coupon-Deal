@@ -7,8 +7,8 @@
 
 # testing
 /coverage
-
-# production
+/firebase
+# prfrontend/src/firebase.jsoduction
 /build
 
 # misc
