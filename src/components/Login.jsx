@@ -3,12 +3,14 @@ import { useFormik } from "formik";
 import { loginSchema } from "../schemas/loginSchema";
 import { auth } from "../firebase";
 import { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth"; // Import the necessary Firebase auth functions
+import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth"; // Import the necessary Firebase auth functions
 
 const initialValues = {
   email: "",
   password: "",
 };
+
+const googleProvider = new GoogleAuthProvider();
 
 const Login = () => {
 
@@ -49,6 +51,11 @@ const Login = () => {
       },
       
     });
+
+    const signupWithGoogle = () =>{
+      signInWithPopup(auth, googleProvider)
+    }
+
   return (
     <div>
       <div className="bg-[#181e24] flex items-center justify-center min-h-screen ">
@@ -106,17 +113,17 @@ const Login = () => {
           <button className="w-full h-10 text-center mt-4 text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700   ">
             Login
           </button>
-          {/* <hr className="mt-3 mx-10"></hr>
-          <div className="flex justify-around bg-slate-300/30 hover:bg-slate-800/40 hover:text-white border rounded-xl m-4">
-            <button className="flex">
+          <hr className="mt-3 mx-10"></hr>
+          <div className="flex justify-around bg-slate-300/30 hover:bg-slate-800/40 hover:text-white border rounded-full m-4 p-1 mx-10">
+            <button className="flex" onClick={signupWithGoogle}>
               <img
                 className=" h-6"
-                src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
                 alt="google"
               />
               Continue with Google
             </button>
-          </div> */}
+          </div>
           <hr className="mt-5 mx-10"></hr>
           <div>
             <h1 className="text-black p-2 mt-4">
