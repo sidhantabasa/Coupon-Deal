@@ -1,29 +1,16 @@
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Body from './components/Body';
-import Error from './components/Error';
-import Sellpage from './components/Sellpage';
-
-
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Routing from "./Routing";
 
 function App() {
-  return(
-      <>
-      <Header/>
-      <Body/>
-      
-      <Footer/>
-      <Login/>
-      <Signup/>
-      <Error/>
-      <Sellpage/>
-      
-      </>      
-      
-  )
+  return (
+    <>
+      <Header />
+      <Routing />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

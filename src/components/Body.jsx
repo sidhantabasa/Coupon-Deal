@@ -3,31 +3,31 @@ import BG from "./images/BG.png";
 import Marquee from "react-fast-marquee";
 import mBG from "./images/mobileBG.png";
 import sid from "./images/mobileBG.png";
-import Card from "./Card";
+// import Card from "./Card";
 // import ScrollToTop from "./ScrollToTop";
 
 const Body = () => {
   return (
     <div>
       <body>
-        <div class="bg-blue-950 relative w-full  hidden md:block">
+        <div class="bg-blue-950 relative w-full pt-24 hidden md:block">
           <img
             src={BG}
             alt="Descriptive Alt Text"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="md:hidden">
+        <div className=" pt-24 md:hidden ">
           <img src={mBG} alt="bg" />
         </div>
 
         <div className="bg-[#181e24] ">
           <h1 className="text-center font-extrabold text-3xl p-2 bg-[#181e24] shadow-xl text-white">
-            SOLDOUT COUPONS{" "}
+            RECENT COUPONS{" "}
           </h1>
           
           <div className="bg-[#181e24] h-auto m-8 max-w-xl">
-            <Card/>
+            
           </div>
 
           <h1 className="text-center font-extrabold text-4xl mt-2 p-1 shadow-xl  text-white">

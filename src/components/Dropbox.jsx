@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Dropbox = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,55 +29,30 @@ const Dropbox = () => {
           role="menu"
         >
           <div className="py-1 bg-[#2a323c] text-white rounded-b-md shadow-xl ">
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-              Home
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm hover:bg-gray-800"
-              role="menuitem"
-            >
-              About
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-              Coupons
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-              Store
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-              Sell Coupon
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-              Cart
-            </button>
-            <button
-              href="#"
-              className="block px-4 py-2 text-sm  hover:bg-gray-800"
-              role="menuitem"
-            >
-             User
-            </button>
+            <Link to="/">
+              <button
+                className="block  text-sm px-4 py-2 w-full hover:bg-gray-800 "
+                role="menuitem"
+              >
+                Home
+              </button>
+            </Link>
+            <Link to="/cardList">
+              <button
+                className="block w-full  text-sm px-4 py-2 hover:bg-gray-800 "
+                role="menuitem"
+              >
+                Coupon
+              </button>
+            </Link>
+            <Link to="/uploadCoupon">
+              <button
+                className="block w-full text-sm px-4 py-2 hover:bg-gray-800 "
+                role="menuitem"
+              >
+                Sell Coupon
+              </button>
+            </Link>
           </div>
         </div>
       )}

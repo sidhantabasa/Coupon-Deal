@@ -6,7 +6,7 @@ const Error = () => {
   //     const error = useRouteError();
   //     if(error.status === 404){
   return <>
-    <div className="grid min-h-[100vh] place-items-center text-white bg-[#181e24] px-8 ">
+    <div className="grid min-h-[100vh] pt-24 place-items-center text-white bg-[#181e24] px-8 ">
       <div className="text-center">
         <p className="text-9xl font-semibold text-primary">404 Error</p>
         <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-5xl">

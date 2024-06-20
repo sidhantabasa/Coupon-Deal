@@ -58,7 +58,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="bg-[#181e24] flex items-center justify-center min-h-screen ">
+      <div className="bg-[#181e24] pt-24 flex items-center justify-center min-h-screen ">
         <form
           onSubmit={handleSubmit}
           className="bg-gradient-to-tl from-cyan-500 to-green-500  h- max-w-96 p-6 rounded-lg shadow-inner-outer"

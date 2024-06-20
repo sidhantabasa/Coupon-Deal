@@ -1,39 +1,76 @@
 import React from "react";
 import logo from "./images/cd_logo.png";
-import { BsCart3} from 'react-icons/bs';
+import { BsCart3 } from "react-icons/bs";
 import Dropbox from "./Dropbox";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="bg-gradient-to-tl from-cyan-500 to-green-500  pt-3 pb-1 ">
+    <header className="bg-gradient-to-tl from-cyan-500 to-green-500 pt-3 pb-1 fixed top-0 left-0 w-full z-50 h-24">
       <nav className="flex text-white border-1 mt-0 bg-black/30 rounded-full m-3 items-center justify-between">
-        <logo className="flex  p-2 font-bold items-center justify-between">
-          <img className="h-14 w-20" src={logo} alt="" />
-          <div className="text-xl">
+        <div className="flex p-2 font-bold items-center">
+          <img className="h-14 w-20" src={logo} alt="Logo" />
+          <div className="text-xl ml-2">
             <h1>COUPON</h1>
             <h1>DEAL</h1>
           </div>
-        </logo>
-        <menu className=" md:flex justify-between gap-x-6 text-md p-2 hidden">
-          <h2>HOME</h2>
-          <h2>COUPONS</h2>
-          <h2>STORE</h2>
-          <h2>SELL COUPON</h2>
-          <h2>ABOUT</h2>
-        </menu>
+        </div>
+        <div className="md:flex justify-between items-center gap-x-6 text-md p-2 hidden">
+          <NavLink
+            to="/"
+            exact
+            className={({ isActive }) =>
+              isActive
+                ? "text-white text-lg font-bold"
+                : "text-white hover:text-gray-400"
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/cardList"
+            className={({ isActive }) =>
+              isActive
+                ? "text-white text-lg font-bold"
+                : "text-white hover:text-gray-400"
+            }
+          >
+            Coupon
+          </NavLink>
+          <NavLink
+            to="/uploadCoupon"
+            className={({ isActive }) =>
+              isActive
+                ? "text-white text-lg font-bold"
+                : "text-white hover:text-gray-400"
+            }
+          >
+            Sell Coupon
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-white text-lg font-bold"
+                : "text-white hover:text-gray-400"
+            }
+          >
+            About
+          </NavLink>
+        </div>
         <div className="md:flex hidden gap-x-2 font-semibold p-4">
           <button className="m-2">
-            <BsCart3 className='h-6 w-6' />
+            <BsCart3 className="h-6 w-6" />
           </button>
           <button className="m-2">
-            <i class="fas fa-user"></i>
+            <i className="fas fa-user"></i>
           </button>
         </div>
-        <div className="mr-4 md:hidden ">
-         <Dropbox/>
+        <div className="mr-4 md:hidden">
+          <Dropbox />
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
