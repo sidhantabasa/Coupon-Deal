@@ -1,6 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import cs from "./images/cbg.png"
+import s1 from "./images/1.png"
+import s2 from "./images/2.png"
+import s3 from "./images/3.png"
 import sid from "./images/mobileBG.png";
 import slogan from "./images/tagline.png";
 
@@ -167,11 +169,11 @@ const Body = () => {
 
           </div>
           {/* How Its Work Section */}
-
-          <div className="flex overflow-x-auto scrollbar-hide" >
-              <img src={cs} alt="cs" />
-              <img src={cs} alt="cs" />
-              <img src={cs} alt="cs" />
+            
+          <div className="flex overflow-x-auto scrollbar-hide mb-24" >
+              <img src={s1} alt="cs" />
+              <img src={s2} alt="cs" />
+              <img src={s3} alt="cs" />
             </div>
           <h2 className="text-center font-bold text-4xl tracking-wide my-6 text-white ">
             TOP BRANDS
