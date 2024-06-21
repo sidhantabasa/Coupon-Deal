@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./images/cd_logo.png";
 import { BsCart3 } from "react-icons/bs";
 import Dropbox from "./Dropbox";
 import { NavLink } from "react-router-dom";
+import UserInfo from "./UserInfo";
 
 const Header = () => {
+
+  const[show,setshow]=useState(false)
+
+  const clickhandle = () => {
+    setshow(!show);
+  };
+
   return (
     <header className="bg-gradient-to-tl from-cyan-500 to-green-500 pt-3 pb-1 fixed top-0 left-0 w-full z-50 h-24">
       <nav className="flex text-white border-1 mt-0 bg-black/30 rounded-full m-3 items-center justify-between">
@@ -48,28 +56,30 @@ const Header = () => {
             Sell Coupon
           </NavLink>
           <NavLink
-            to="/about"
+            to="/contact"
             className={({ isActive }) =>
               isActive
                 ? "text-white text-lg font-bold"
                 : "text-white hover:text-gray-400"
             }
           >
-            About
+            Contact
           </NavLink>
         </div>
         <div className="md:flex hidden gap-x-2 font-semibold p-4">
           <button className="m-2">
             <BsCart3 className="h-6 w-6" />
           </button>
-          <button className="m-2">
+          <button onClick={clickhandle} className="m-2">
             <i className="fas fa-user"></i>
           </button>
         </div>
         <div className="mr-4 md:hidden">
           <Dropbox />
         </div>
+        {show && <UserInfo/>}
       </nav>
+    
     </header>
   );
 };

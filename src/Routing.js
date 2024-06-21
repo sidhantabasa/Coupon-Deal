@@ -5,6 +5,7 @@ import Sellpage from './components/Sellpage'
 import Login from './components/Login'
 import Cardlist from './components/CardList'
 import Error from './components/Error'
+import Contact from './components/Contact'
 const Routing = () => {
   return (
     <Routes>
@@ -14,6 +15,7 @@ const Routing = () => {
       <Route exact path='/login' element={<Login />}></Route>
       <Route exact path='/cardList' element={<Cardlist />}></Route>
       <Route exact path='/*' element={<Error />}></Route>
+      <Route exact path='/contact' element={<Contact />}></Route>
 
     </Routes>
   )

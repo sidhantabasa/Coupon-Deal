@@ -1,39 +1,39 @@
 import React from "react";
-import BG from "./images/BG.png";
 import Marquee from "react-fast-marquee";
 import mBG from "./images/mobileBG.png";
 import sid from "./images/mobileBG.png";
+import slogan from "./images/tagline.png";
+import Loader from "./Loader";
 // import Card from "./Card";
 // import ScrollToTop from "./ScrollToTop";
 
 const Body = () => {
   return (
-    <div>
+    <div className="bg-[#181e24]">
       <body>
-        <div class="bg-blue-950 relative w-full pt-24 hidden md:block">
-          <img
-            src={BG}
-            alt="Descriptive Alt Text"
-            className="w-full h-full object-cover"
-          />
+        <div className=" relative w-full pt-24 items-center flex ">
+          <img src={slogan} alt="Slogan" className="ml-24 mt-12 border-r-2 w-[700px] hover:" />
+          <p className="text-white text-left p-10 text-4xl mr-20 tracking-wide leading-normal ">
+          <span className="bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-transparent font-bold">CouponDeal</span> is a platform where you can sell your unused coupons and
+            purchase useful discounts coupon according to your need in
+            reasonable price.
+          </p>
         </div>
         <div className=" pt-24 md:hidden ">
           <img src={mBG} alt="bg" />
         </div>
 
         <div className="bg-[#181e24] ">
-          <h1 className="text-center font-extrabold text-3xl p-2 bg-[#181e24] shadow-xl text-white">
+          <h1 className="text-center mt-12 font-extrabold text-3xl p-2 bg-[#181e24] shadow-xl text-white">
             RECENT COUPONS{" "}
           </h1>
-          
-          <div className="bg-[#181e24] h-auto m-8 max-w-xl">
-            
-          </div>
+
+          <div className="bg-[#181e24] h-auto m-8 max-w-xl"></div>
 
           <h1 className="text-center font-extrabold text-4xl mt-2 p-1 shadow-xl  text-white">
             ABOUT COUPONDEAL{" "}
           </h1>
-{/* 
+          {/* 
           <h2 className="text-center font-bold text-5xl mt-3 text-white ">
             INTRODUCTION
           </h2> */}
@@ -117,7 +117,6 @@ const Body = () => {
                 from other users.
               </p>
             </div>
-            
           </div>
 
           <h2 className="text-center font-bold text-4xl mt-3 text-white ">
@@ -128,7 +127,9 @@ const Body = () => {
             <div className="px-24 py-4 ">
               <div className=" w-44">
                 <img src={sid} alt="sid" className=" h-56 w-44 rounded-full " />
-                <h3 className="text-center text-lg text-white mt-3 font-bold">SIDHANTA BASA</h3>
+                <h3 className="text-center text-lg text-white mt-3 font-bold">
+                  SIDHANTA BASA
+                </h3>
                 <p className="text-center">CEO</p>
                 <button className="px-5">fb</button>
                 <button className="px-5">insta</button>
@@ -162,12 +163,12 @@ const Body = () => {
           </h2>
 
           <div className=" relative mx-40 space-y-3 ">
-          <div className="flex">
-            <div className="absolute h inset-0 z-40  bg-gradient-to-r from-[#181e24] via-transparent to-[#181e24]  "></div>
-            {/* <div className="absolute ml-[1090px] w-[20px] inset-0 z-40 bg-[#181e24]  "></div> */}
-          </div>
+            <div className="flex">
+              <div className="absolute h inset-0 z-40  bg-gradient-to-r from-[#181e24] via-transparent to-[#181e24]  "></div>
+              {/* <div className="absolute ml-[1090px] w-[20px] inset-0 z-40 bg-[#181e24]  "></div> */}
+            </div>
 
-            <Marquee  direction="right " className="p-3" >
+            <Marquee direction="right " className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
@@ -198,9 +199,8 @@ const Body = () => {
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
-              
             </Marquee>
-            <Marquee  direction="left"  className="p-3">
+            <Marquee direction="left" className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
@@ -231,9 +231,8 @@ const Body = () => {
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
-              
             </Marquee>
-            <Marquee  direction="right"  className="p-3" >
+            <Marquee direction="right" className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
@@ -264,9 +263,8 @@ const Body = () => {
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
-              
             </Marquee>
-            <Marquee  direction="left"  className="p-3" >
+            <Marquee direction="left" className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
@@ -297,9 +295,8 @@ const Body = () => {
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
-              
             </Marquee>
-            <Marquee  direction="right"  className="p-3" >
+            <Marquee direction="right" className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
@@ -330,21 +327,18 @@ const Body = () => {
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
                 AMAZON
               </span>
-              
             </Marquee>
-
           </div>
+          <Loader/>
           <div>
             <br />
             <br />
             <br />
             <br />
             <br />
-            
           </div>
         </div>
-        
-       </body>
+      </body>
     </div>
   );
 };
