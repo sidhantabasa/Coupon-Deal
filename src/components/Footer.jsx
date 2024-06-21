@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "./images/cd_logo.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
   <div className=""></div>
-  <footer className="bg-gray-950 text-white">
+  <footer className="bg-gray-950 text-white z-20">
     <div className="flex flex-col md:flex-row items-center justify-around p-4">
       <div className="mb-4 md:mb-0">
         <div className="flex p-2 font-bold items-center justify-center md:justify-between">
@@ -17,7 +18,7 @@ const Footer = () => {
       </div>
       <div className="mb-4 md:mb-0 text-center ">
         <h1 className="hover:cursor-pointer mb-2 md:mb-0">KNOW MORE</h1>
-        <h1 className="hover:cursor-pointer mb-2 md:mb-0">FAQ</h1>
+        <Link to='/faq' className="hover:cursor-pointer mb-2 md:mb-0">FAQ</Link>
         <h1 className="hover:cursor-pointer mb-2 md:mb-0">CONTACT US</h1>
         <h1 className="hover:cursor-pointer">SUPPORT</h1>
       </div>

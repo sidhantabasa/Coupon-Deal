@@ -1,27 +1,32 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import mBG from "./images/mobileBG.png";
+import cs from "./images/cbg.png"
 import sid from "./images/mobileBG.png";
 import slogan from "./images/tagline.png";
-import Loader from "./Loader";
+
 // import Card from "./Card";
 // import ScrollToTop from "./ScrollToTop";
 
 const Body = () => {
   return (
-    <div className="bg-[#181e24]">
+    <div className="bg-[#181e24] font-custom">
       <body>
-        <div className=" relative w-full pt-24 items-center flex ">
-          <img src={slogan} alt="Slogan" className="ml-24 mt-12 border-r-2 w-[700px] hover:" />
-          <p className="text-white text-left p-10 text-4xl mr-20 tracking-wide leading-normal ">
-          <span className="bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-transparent font-bold">CouponDeal</span> is a platform where you can sell your unused coupons and
-            purchase useful discounts coupon according to your need in
-            reasonable price.
+        <div className="relative w-full pt-24 flex flex-col md:flex-row items-center">
+          <img
+            src={slogan}
+            alt="slogan"
+            className="ml-4 md:ml-24 mt-4 md:mt-12 border-r-2 max-w-full md:max-w-[700px] h-auto"
+          />
+          <p className="font-custom text-white text-left p-6 md:p-10 text-xl md:text-3xl tracking-wide leading-normal md:leading-normal">
+            <span className="bg-gradient-to-tl from-cyan-500 to-green-500 bg-clip-text text-transparent font-bold">
+              CouponDeal
+            </span>{" "}
+            is a platform where you can sell your unused coupons and purchase
+            useful discounts according to your needs at reasonable prices.
           </p>
         </div>
-        <div className=" pt-24 md:hidden ">
-          <img src={mBG} alt="bg" />
-        </div>
+
+       
 
         <div className="bg-[#181e24] ">
           <h1 className="text-center mt-12 font-extrabold text-3xl p-2 bg-[#181e24] shadow-xl text-white">
@@ -157,7 +162,17 @@ const Body = () => {
               </div>
             </div>
           </div>
+          <div>
+            
 
+          </div>
+          {/* How Its Work Section */}
+
+          <div className="flex overflow-x-auto scrollbar-hide" >
+              <img src={cs} alt="cs" />
+              <img src={cs} alt="cs" />
+              <img src={cs} alt="cs" />
+            </div>
           <h2 className="text-center font-bold text-4xl tracking-wide my-6 text-white ">
             TOP BRANDS
           </h2>
@@ -167,6 +182,7 @@ const Body = () => {
               <div className="absolute h inset-0 z-40  bg-gradient-to-r from-[#181e24] via-transparent to-[#181e24]  "></div>
               {/* <div className="absolute ml-[1090px] w-[20px] inset-0 z-40 bg-[#181e24]  "></div> */}
             </div>
+            
 
             <Marquee direction="right " className="p-3">
               <span className=" bg-[#2a323c] p-3 px-5 m-3 text-white shadow-lg   rounded-md">
@@ -329,7 +345,6 @@ const Body = () => {
               </span>
             </Marquee>
           </div>
-          <Loader/>
           <div>
             <br />
             <br />

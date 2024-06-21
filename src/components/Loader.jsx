@@ -3,7 +3,7 @@ const Loader = () => {
           <div role="status" className=" absolute">
               <svg
                   aria-hidden="true"
-                  className="w-8 h-8 mr-2 text-[#2a323c] animate-spin fill-[#181e24]"
+                  className="w-8 h-8 mr-2 text-[#2a323c]  animate-spin fill-[#181e24]"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

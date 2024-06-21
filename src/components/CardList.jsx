@@ -29,7 +29,7 @@ const Cardlist = () => {
       
       
        text-white flex ">
-        <div className=" fixed w-56 h-screen border-r-2 mr-3 ">
+        <div className=" fixed w-56 mr-3 ">
           <h1 className="text-center mt-3">Filterd</h1>
 
           <select
