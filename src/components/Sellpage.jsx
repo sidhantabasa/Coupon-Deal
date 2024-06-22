@@ -12,7 +12,7 @@ const Sellpage = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   const Brands = CouponCategories[categoryName];
-
+// heyy Umesh
   // const handleClick = (brand) => {
   //     // setbrandname(brand);
   //     setShowSuggestions(false);
