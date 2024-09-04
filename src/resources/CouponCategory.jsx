@@ -1,3 +1,4 @@
+
 const couponCategories = {
     
     Groceries: ["Big Bazaar", "DMart", "Reliance Fresh", "More", "Spencer's"],
