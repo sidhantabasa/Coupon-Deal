@@ -1,4 +1,5 @@
 const couponCategories = {
+    
     Groceries: ["Big Bazaar", "DMart", "Reliance Fresh", "More", "Spencer's"],
     Clothing: ["FabIndia", "Raymond", "Peter England", "Biba", "Pantaloons"],
     Electronics: ["Croma", "Reliance Digital", "Vijay Sales", "Samsung", "Sony"],
